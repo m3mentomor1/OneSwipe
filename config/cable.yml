@@ -1,0 +1,10 @@
+development:
+  adapter: redis
+
+test:
+  adapter: test
+
+production:
+  adapter: redis
+  url: redis://red-cgrrak82qv2dcb9b6t60:6379
+  channel_prefix: dating_app_production
