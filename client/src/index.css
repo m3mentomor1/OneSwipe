@@ -7,7 +7,7 @@ html, body {
 }
 
 * {
-  font-family: "Readex Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
 
@@ -15,8 +15,13 @@ html, body {
   margin-top: 0px;
 }
 
-h2 {
-  font-style: italic;
+.swipe-info {
+  position: relative;
+  font-style: bold;
+  z-index: 1;
+  color: white;
+  top: -50px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Add drop shadow effect */
 }
 
 .primary-title {
@@ -339,9 +344,11 @@ form .secondary-button:hover {
   margin: 0;
 }
 
-/* For Firefox to hide up and down arrows */
+/* For Firefox and compatibility */
 .onboarding form input {
-  -moz-appearance:textfield;
+  -webkit-appearance: textfield; /* Chrome, Safari, Opera */
+  -moz-appearance: textfield; /* Firefox */
+  appearance: textfield; /* Standard */
 }
 
 .onboarding form .multiple-input-container {
@@ -505,6 +512,27 @@ form .secondary-button:hover {
     display: none;
   }
 }
+
+/* Add these styles to position the buttons */
+.next-button,
+.back-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 20px; /* Adjust sizes */
+}
+
+/* Adjust the positioning of the next button */
+.next-button {
+  right: 10px; /* Adjust as needed */
+}
+
+/* Adjust the positioning of the back button */
+.back-button {
+  left: 10px; /* Adjust as needed */
+}
+
 
 /* ---------Chat Header--------- */
 

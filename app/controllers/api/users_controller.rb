@@ -88,7 +88,9 @@ class Api::UsersController < ApplicationController
       :about, 
       :password, 
       :password_confirmation,
-      :location)
+      :location,
+      :school,
+      :mobile_number)
   end
 
 end

@@ -19,7 +19,9 @@ User.create(
   about: "I sing for a hardcore punk band, called Knocked Loose.",
   password: "123456",   
   password_confirmation: "123456",
-  location: "United States, Oldham County, Kentucky")
+  location: "United States, Oldham County, Kentucky",
+  school: "University of Waterloo, Computer Science",
+  mobile_number: "+1 7135556543")
 
 User.create(
   first_name: "Vanessa Hudson", 
@@ -40,5 +42,7 @@ User.create(
   about: "I'm a very analytical woman, who makes decisions based on data.",
   password: "123456",   
   password_confirmation: "123456",
-  location: "United Kingdom, England, London")
+  location: "United Kingdom, England, London",
+  school: "California Institute of Technology, Data Science",
+  mobile_number: "+1 4155556789")
 

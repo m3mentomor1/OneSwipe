@@ -24,7 +24,9 @@ function Onboarding({ user, showAuth, isEditingProfile, setUser }) {
       url4: user.url4 || '',
       url5: user.url5 || '',
       about: user.about || '',
-      location: user.location || ''
+      location: user.location || '',
+      school: user.school || '',
+      mobile_number: user.mobile_number || ''
     },
     validationSchema: Yup.object({
       first_name: Yup.string().required('Name is required'),
@@ -36,13 +38,15 @@ function Onboarding({ user, showAuth, isEditingProfile, setUser }) {
       show_sexual_orientation: Yup.boolean().required('Show sexual orientation is required'),
       sexual_orientation: Yup.string().required('Sexual orientation is required'),
       gender_interest: Yup.string().required('Gender interest is required'),
-      url1: Yup.string().url('The filed must contain a valid URL').required('Photo url is required'),
+      url1: Yup.string().url('The filed must contain a valid URL').required('Profile photo is required'),
       url2: Yup.string().url('The field must contain a valid URL'),
       url3: Yup.string().url('The field must contain a valid URL'),
       url4: Yup.string().url('The field must contain a valid URL'),
       url5: Yup.string().url('The field must contain a valid URL'),
       about: Yup.string().required('The field is required'),
       location: Yup.string().required('Location is required'),
+      school: Yup.string(),
+      mobile_number: Yup.string().matches(/^\+\d{1,3} \d{3,14}$/, 'Please enter a valid phone number').required('Mobile number is required'),
     }),
     onSubmit: () => handleSubmit()
   })
@@ -193,6 +197,36 @@ function Onboarding({ user, showAuth, isEditingProfile, setUser }) {
               />
             </div>
             {formik.touched.location && formik.errors.location && <div className="errors">{formik.errors.location}</div>}
+
+            <label>School Attended (Optional)</label>
+            <div className="multiple-input-container">
+              <input
+                id="school"
+                name="school"
+                type="text"
+                placeholder="<School/University>, <Major>"
+                value={formik.values.school}
+                onBlur={formik.handleBlur}
+                onChange={formik.handleChange}
+                className="wide-input"
+              />
+            </div>
+            {formik.touched.school && formik.errors.school && <div className="errors">{formik.errors.school}</div>}
+
+            <label>Mobile Number</label>
+            <div className="multiple-input-container">
+              <input
+                id="mobile_number"
+                name="mobile_number"
+                type="tel"
+                placeholder="<Country_code> <Mobile_number> Ex: +1 2125551234"
+                value={formik.values.mobile_number}
+                onBlur={formik.handleBlur}
+                onChange={formik.handleChange}
+                className="wide-input"
+              />
+            </div>
+            {formik.touched.mobile_number && formik.errors.mobile_number && <div className="errors">{formik.errors.mobile_number}</div>}
 
             <label>Gender</label>
             <div className="multiple-input-container">
