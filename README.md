@@ -1,4 +1,7 @@
-# Dating Web App
+# Dating Web App (WIP)
+
+### 🧐 I. Overview
+This is a dating website app built using Ruby on Rails, React.js, & Azure Database for PostgreSQL. This app mimics how tinder works with a few modifications. 
 
 Landing Page:
 ![alt text](image.png)
