@@ -1,11 +1,11 @@
-import React from 'react'
-import { useFormik } from 'formik'
-import * as Yup from 'yup'
-import { useNavigate } from 'react-router-dom'
+import React, { useState } from 'react';
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
+import { useNavigate } from 'react-router-dom';
 
 function Auth({ setShowAuth, isSignUp, setUser, setIsSignUp, setIsForgettingPassword }) {
-
-  const navigate = useNavigate()
+  const [isLoading, setIsLoading] = useState(false); // State variable to manage loading state
+  const navigate = useNavigate();
 
   const formik = useFormik({
     initialValues: {
@@ -25,9 +25,10 @@ function Auth({ setShowAuth, isSignUp, setUser, setIsSignUp, setIsForgettingPass
       })
     }),
     onSubmit: () => handleSubmit()
-  })
+  });
 
   function handleSubmit() {
+    setIsLoading(true); // Set loading state to true
     if (isSignUp) {
       fetch('/api/signup', {
         method: "POST",
@@ -43,11 +44,12 @@ function Auth({ setShowAuth, isSignUp, setUser, setIsSignUp, setIsForgettingPass
       .then((r) => {
         if (r.ok) {
           r.json().then((data) => {
-            setUser(data)
-            navigate('/onboarding')            
+            setUser(data);
+            navigate('/onboarding');            
           })
         } 
       })
+      .finally(() => setIsLoading(false)); // Reset loading state after request completion
     } else {
       fetch('/api/login', {
         method: "POST",
@@ -62,13 +64,14 @@ function Auth({ setShowAuth, isSignUp, setUser, setIsSignUp, setIsForgettingPass
       .then((r) => {
         if (r.ok) {
           r.json().then((data) => {
-            setUser(data)
-            navigate('/dashboard')
+            setUser(data);
+            navigate('/dashboard');
           })
         } else {
           r.json().then((errors) => formik.setErrors({password: errors.errors}))
         }
       })
+      .finally(() => setIsLoading(false)); // Reset loading state after request completion
     }
   }
 
@@ -115,15 +118,24 @@ function Auth({ setShowAuth, isSignUp, setUser, setIsSignUp, setIsForgettingPass
         onBlur={formik.handleBlur} 
         value={formik.values.password2} />}
         {formik.touched.password2 && formik.errors.password2 && <div className="errors">{formik.errors.password2}</div>}
-        <button type="submit" className="secondary-button">Submit</button>
+        
+        {/* Button with loading visual */}
+        <button type="submit" className="secondary-button" disabled={isLoading}>
+          {isLoading ? (
+            <div className="loading-animation"></div> // Show loading animation if isLoading is true
+          ) : (
+            'Submit'
+          )}
+        </button>
       </form>
+
       <div className="forgot-password-link">
         <p onClick={() => setIsSignUp((isSignUp) => !isSignUp)}>{isSignUp ? 'Already have an account?' : 'Don\'t have an account?'}</p>
         <p onClick={() => setIsForgettingPassword(true)}>Forget your password?</p>
       </div>
       <hr/>
     </div>
-  )
+  );
 }
 
-export default Auth
+export default Auth;

@@ -12,6 +12,7 @@ function Dashboard({ user, cable, setShowAuth, showViewedUser, setShowViewedUser
   const [matchUsers, setMatchUsers] = useState([]);
   const [recipient, setRecipient] = useState({});
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0); // Define current photo index state
+  const [isLoading, setIsLoading] = useState(true); // State variable to manage loading state
   const chatContainerRef = useRef(null);
   const swipeContainerRef = useRef(null);
 
@@ -61,7 +62,10 @@ function Dashboard({ user, cable, setShowAuth, showViewedUser, setShowViewedUser
       })
         .then((r) => {
           if (r.ok) {
-            r.json().then((data) => setCharacters(data));
+            r.json().then((data) => {
+              setCharacters(data);
+              setIsLoading(false); // Set loading state to false when data fetching is complete
+            });
           }
         });
     }
@@ -101,9 +105,14 @@ function Dashboard({ user, cable, setShowAuth, showViewedUser, setShowViewedUser
           {showViewedUser ?
             <UserProfile user={recipient} showViewedUser={showViewedUser} setShowViewedUser={setShowViewedUser} />
             :
-            <>
-              <div className="card-container">
-                {characters.map((character) =>
+            <div className="card-container">
+              {isLoading ? (
+                <div className="loading-overlay">
+                  <div className="loading-animation"></div>
+                  <p className="loading-text">Finding potential matches...</p>
+                </div>
+              ) : (
+                characters.map((character) =>
                   <TinderCard className="swipe" key={character.id} onSwipe={(direction) => swiped(direction, character.id)}>
                     <div style={{ backgroundImage: "url(" + character[`url${currentPhotoIndex + 1}`] + ")" }} className="card">
                       <h3>{character.first_name}</h3>
@@ -113,14 +122,15 @@ function Dashboard({ user, cable, setShowAuth, showViewedUser, setShowViewedUser
                       <img src={backButtonImage} alt="Back" className="back-button" onClick={() => handleBackClick()} />
                     </div>
                   </TinderCard>
-                )}
-              </div>
-              {lastDirection ? <h2 className="swipe-info">You swiped {lastDirection}</h2> : null}
-            </>}
+                )
+              )}
+              {!isLoading && lastDirection && <h2 className="swipe-info">You swiped {lastDirection}</h2>}
+            </div>
+          }
         </div>
       </div>
     </div>
-  );
+  );    
 }
 
 export default Dashboard;
