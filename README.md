@@ -26,35 +26,33 @@ Matching users:
 
 ### 🛠️ IV. How to use this repository?
 
-**1. Clone this repository**
+**1. Clone this repository.**
 
    Copy & paste this command into your terminal: 
    ```
    git clone https://github.com/m3mentomor1/Dating_Web-App.git
    ```
 
-**2. Go to the repository's main directory**
+**2. Go to the repository's main directory.**
 
    Copy & paste this command into your terminal: 
    ```
    cd Dating_Web-App
    ```
 
-**3. Install back-end dependencies**
+**3. Install back-end dependencies.**
 
    Copy & paste this command into your terminal: 
    ```
    bundle install
    ```
 
-**4. Setup the database**
-
-> A. On the Azure portal, create a resource & an instance for Azure Database for PostgreSQL.
+**4. On the Azure portal, create a resource & an instance for Azure Database for PostgreSQL.**
 
    Refer to this link for more instructions: 
    https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-server-portal
    
-> B. Go to "config/database.yml" & configure the database connection:
+**5. Go to "config/database.yml" & configure the database connection:**
     
     ```
     default: &default
