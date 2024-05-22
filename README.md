@@ -28,21 +28,21 @@ Matching users:
 
 **1. Clone this repository.**
 
-   Copy & paste this command into your terminal: 
+   Run this command in your terminal: 
    ```
    git clone https://github.com/m3mentomor1/Dating_Web-App.git
    ```
 
 **2. Go to the repository's main directory.**
 
-   Copy & paste this command into your terminal: 
+   Run this command in your terminal: 
    ```
    cd Dating_Web-App
    ```
 
 **3. Install back-end dependencies.**
 
-   Copy & paste this command into your terminal: 
+   Run this command in your terminal: 
    ```
    bundle install
    ```
@@ -66,3 +66,30 @@ https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-cr
 Refer to this link for more instructions:<br>
 https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-server-portal#get-the-connection-information
 
+**6. Run database migrations.**
+
+   Run this command in your terminal: 
+   ```
+   rails db:migrate
+   ```
+
+**7. Install client-side dependencies for React.**
+
+   Run this command in your terminal: 
+   ```
+   npm install --prefix client
+   ```
+
+**8. Start rails server.**
+
+   Run this command in your terminal: 
+   ```
+   rails server
+   ```
+
+**8. Start development server for React, to run the app.**
+
+   Run this command in your terminal: 
+   ```
+   npm start --prefix client
+   ```
