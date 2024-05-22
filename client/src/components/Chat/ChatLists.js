@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import ChatList from './ChatList'
+import React, { useEffect, useState } from 'react';
+import ChatList from './ChatList';
 
-function ChatLists({ user, matchUsers, setMatchChatDisplay, setRecipient, cable, showUnreadMessages, setShowUnreadMessages, setPrevMatchChatDisplay }) {
-  const [listMessages, setListMessages] = useState([])
-  
-  
+function ChatLists({ user, matchUsers, setMatchChatDisplay, setRecipient, cable, showUnreadMessages, setShowUnreadMessages, setPrevMatchChatDisplay, setTotalMessages }) {
+  const [listMessages, setListMessages] = useState([]);
 
   useEffect(() => {
     if (user.id) {
@@ -12,58 +10,66 @@ function ChatLists({ user, matchUsers, setMatchChatDisplay, setRecipient, cable,
       .then((r) => {
         if (r.ok) {
           r.json().then((data) => {
-            setListMessages(data) 
-            const obj = {}           
+            setListMessages(data);
+            const obj = {};
             data.forEach((listMessage) => {
-              obj[listMessage[0].message.pair_id] = true
-            })
-            setShowUnreadMessages(obj)
-          })
+              obj[listMessage[0].message.pair_id] = true;
+            });
+            setShowUnreadMessages(obj);
+
+            // Calculate the total number of messages
+            const total = data.reduce((sum, listMessage) => sum + listMessage.length, 0);
+            setTotalMessages(total); // Update the total number of messages
+          });
         }
-      })
-    }    
-  }, [user.id])
+      });
+    }
+  }, [user.id, setShowUnreadMessages, setTotalMessages]);
 
   useEffect(() => {
     if (user.id) {
-      cable.subscriptions.create
-      (
+      cable.subscriptions.create(
         {
           channel: 'ChatlistsChannel',
-          user_id: user.id
+          user_id: user.id,
         },
         {
           received: () => {
             fetch(`/api/users/${user.id}/message_histories`)
             .then((r) => {
               if (r.ok) {
-                r.json().then((data) => setListMessages(data))
+                r.json().then((data) => {
+                  setListMessages(data);
+
+                  // Calculate the total number of messages
+                  const total = data.reduce((sum, listMessage) => sum + listMessage.length, 0);
+                  setTotalMessages(total); // Update the total number of messages
+                });
               }
-            })
-          }
+            });
+          },
         }
-      )
-    }    
-  }, [user.id, setListMessages, cable.subscriptions])
+      );
+    }
+  }, [user.id, setListMessages, cable.subscriptions, setTotalMessages]);
 
   return (
     <div className="chat-lists">
-      {listMessages.map((listMessage, index) => {
-        return (
-          <ChatList 
-            key={index} 
-            listMessage={listMessage} 
-            matchUsers={matchUsers} 
-            user={user}
-            setPrevMatchChatDisplay={setPrevMatchChatDisplay}
-            showUnreadMessages={showUnreadMessages}
-            setShowUnreadMessages={setShowUnreadMessages}
-            setMatchChatDisplay={setMatchChatDisplay}
-            setRecipient={setRecipient} />
-        )
-      })}
+      {listMessages.map((listMessage, index) => (
+        <ChatList
+          key={index}
+          listMessage={listMessage}
+          matchUsers={matchUsers}
+          user={user}
+          setPrevMatchChatDisplay={setPrevMatchChatDisplay}
+          showUnreadMessages={showUnreadMessages}
+          setShowUnreadMessages={setShowUnreadMessages}
+          setMatchChatDisplay={setMatchChatDisplay}
+          setRecipient={setRecipient}
+        />
+      ))}
     </div>
-  )
+  );
 }
 
-export default ChatLists
+export default ChatLists;
