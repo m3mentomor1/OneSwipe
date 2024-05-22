@@ -64,6 +64,6 @@ https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-cr
         password: <your_password>
     ```
 
-Refer to this link for more instructions:<br>  
+Refer to this link for more instructions:<br>
 https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-server-portal#get-the-connection-information
 
