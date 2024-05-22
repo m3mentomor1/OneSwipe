@@ -5,7 +5,7 @@ This is a dating website app built using Ruby on Rails, React.js, & Azure Databa
 
 ##
 
-### 💻 II. Stack Used
+### 💻 II. Tech Stack
 ``JavaScript`` ``Ruby`` ``React`` ``Ruby on Rails`` ``Azure Database for PostgreSQL``
 
 ##
