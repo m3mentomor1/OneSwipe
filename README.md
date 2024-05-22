@@ -51,7 +51,7 @@ Matching users:
 
    A. On the Azure portal, create a resource & an instance for Azure Database for PostgreSQL.
 
-   You can refer to this documentation for more instructions: 
+   Refer to this link for more instructions: 
    https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-server-portal
    
    B. Go to "config/database.yml" & configure the database connection:
@@ -65,6 +65,7 @@ Matching users:
         username: <your_username>
         password: <your_password>
     ```
-    You can also refer to this documentation for more instructions: 
+    
+    Refer to this link for more instructions: 
     https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-server-portal#get-the-connection-information
 
