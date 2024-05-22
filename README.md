@@ -53,6 +53,7 @@ Refer to this link for more instructions:<br>
 https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-server-portal
    
 **5. Go to "config/database.yml" & configure the database connection:**
+
     ```
     default: &default
         adapter: postgresql
