@@ -49,7 +49,21 @@ Matching users:
 
 **4. Setup the database**
 
-   Copy & paste this command into your terminal: 
-   ```
-   rails db:create
-   ```
+   1. On the Azure portal, create a resource & an instance for Azure Database for PostgreSQL.
+
+   You can refer to this documentation for more instructions: 
+   https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-server-portal
+   
+   2. Go to "config/database.yml" & configure the database connection:
+    ```
+    default: &default
+        adapter: postgresql
+        database: <name_of_database_on_azure>
+        host: <name_of_server_on_azure>.postgres.database.azure.com
+        port: 5432
+        username: <your_username>
+        password: <your_password>
+    ```
+    You can also refer to this documentation for more instructions: 
+    https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-server-portal#get-the-connection-information
+
