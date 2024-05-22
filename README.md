@@ -12,13 +12,15 @@ This is a dating website app built using Ruby on Rails, React.js, & Azure Databa
 
 ### ⏯️ III. Demo
 
-Account Creation:
+Creating an account:
 
-Account Sign-in:
+Account sign-in:
 
-Edit Account Profile/Details:
+Edit account profile/details:
 
-Edit Account Sign-in Credentials:
+Edit account sign-in credentials:
+
+Matching users:
 
 ##
 
@@ -26,14 +28,28 @@ Edit Account Sign-in Credentials:
 
 **1. Clone this repository**
 
-   Paste this command on your terminal: 
+   Copy & paste this command into your terminal: 
    ```
    git clone https://github.com/m3mentomor1/Dating_Web-App.git
    ```
 
 **2. Go to the repository's main directory**
 
-   Paste this command on your terminal: 
+   Copy & paste this command into your terminal: 
    ```
    cd Dating_Web-App
+   ```
+
+**3. Install back-end dependencies**
+
+   Copy & paste this command into your terminal: 
+   ```
+   bundle install
+   ```
+
+**4. Setup the database**
+
+   Copy & paste this command into your terminal: 
+   ```
+   rails db:create
    ```
