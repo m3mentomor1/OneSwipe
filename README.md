@@ -54,7 +54,6 @@ https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-cr
    
 **5. Go to "config/database.yml" & configure the database connection:**
 
-    ```
     default: &default
         adapter: postgresql
         database: <name_of_database_on_azure>
@@ -62,7 +61,7 @@ https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-cr
         port: 5432
         username: <your_username>
         password: <your_password>
-    ```
+    
 
 Refer to this link for more instructions:<br>
 https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-server-portal#get-the-connection-information
