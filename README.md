@@ -34,6 +34,7 @@ This is a dating website app built using Ruby on Rails, React.js, & Azure Databa
    ```
    git clone https://github.com/m3mentomor1/Dating_Web-App.git
    ```
+(Optional: You can also ```Fork``` this repository before cloning.)
 
 **2. Go to the repository's main directory.**
 
