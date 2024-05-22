@@ -5,12 +5,18 @@ This is a dating website app built using Ruby on Rails, React.js, & Azure Databa
 
 ##
 
-### 💻 II. Tech Stack
+### ⛓️ II. Features
+
+✅ Creating an account:
+
+##
+
+### 💻 III. Tech Stack
 ``JavaScript`` ``Ruby`` ``React`` ``Ruby on Rails`` ``Azure Database for PostgreSQL``
 
 ##
 
-### ⏯️ III. Demo
+### ⏯️ IV. Demo
 
 Creating an account:
 
@@ -24,7 +30,7 @@ Matching users:
 
 ##
 
-### 🛠️ IV. How to use this repository?
+### 🛠️ V. How to use this repository?
 
 **1. Clone this repository.**
 
