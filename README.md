@@ -13,11 +13,11 @@ This project contains a dating website app built using Ruby on Rails, React.js, 
 
 ✅ Edit account profile/details
 
-✅ Edit account sign-in credentials
+✅ Edit sign-in credentials
 
 ✅ Match users
 
-✅ Message users
+✅ Message/chat with users in real-time
 
 ##
 
