@@ -1,4 +1,4 @@
-# Dating Web App
+![Message](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/e0e09d07-44e5-440c-9827-73119cb05761)# Dating Web App
 
 ### 🧐 I. Overview
 ![image](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/121dad6e-1bfc-436c-9fad-9286b5a11d82)
@@ -32,6 +32,8 @@ This project contains a dating website app built using Ruby on Rails, React.js, 
 ✅ View user profiles
 
 ✅ Message/chat with users in real-time
+
+![Message](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/9db83ab3-a7cf-4f02-be18-31b6bce43211)
 
 ##
 
