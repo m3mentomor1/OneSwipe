@@ -12,6 +12,7 @@ This project contains a dating website app built using Ruby on Rails, React.js, 
 ✅ Create an account
 
 ✅ Sign-in
+![Sign in](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/b891bd9a-ddf9-4aa3-b53b-9734559e773a)
 
 ✅ Edit account profile/details
 
