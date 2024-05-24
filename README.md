@@ -1,4 +1,4 @@
-![Edit sign in](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/5d992b98-7677-4fb4-803d-e28412c059a7)![Edit sign in](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/5d992b98-7677-4fb4-803d-e28412c059a7)# Dating Web App
+# Dating Web App
 
 ### 🧐 I. Overview
 ![image](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/121dad6e-1bfc-436c-9fad-9286b5a11d82)
