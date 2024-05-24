@@ -1,11 +1,5 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom'; // Import useHistory hook
-import UserManagement from './UserManagement';
-import ContentManagement from './ContentManagement';
-import Analytics from './Analytics';
-import Settings from './Settings';
-import Reports from './Reports';
-import Notifications from './Notifications';
 
 function AdminDashboard() {
   const history = useHistory(); // Initialize useHistory hook
@@ -24,19 +18,10 @@ function AdminDashboard() {
       {/* Menu Bar */}
       <div className="menu-bar">
         <div className="menu-content">
-          <span>Admin Dashboard</span>
-          <button onClick={handleSignOut}>Sign out</button>
+          <span>User Manager</span>
         </div>
+        <button onClick={handleSignOut} className="sign-out-button">Sign out</button>
       </div>
-
-      {/* Main Content */}
-      <h1>Welcome to Admin Dashboard</h1>
-      <UserManagement />
-      <ContentManagement />
-      <Analytics />
-      <Settings />
-      <Reports />
-      <Notifications />
     </div>
   );
 }

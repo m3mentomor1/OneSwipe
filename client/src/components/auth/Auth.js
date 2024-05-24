@@ -79,7 +79,7 @@ function Auth({ setShowAuth, isSignUp, setUser, setIsSignUp, setIsForgettingPass
     <div className="auth">
       <div className="close-icon" onClick={() => setShowAuth(false)}>ⓧ</div>
       <h1>{isSignUp ? "SIGN UP" : "SIGN IN"}</h1>
-      <p>By clicking Submit, you agree to our Terms. Learn how we process your data in our Privacy Policy and Cookie Policy.</p>
+      <p>By clicking SUBMIT, you agree to our Terms. Learn how we process your data in our Privacy Policy and Cookie Policy.</p>
 
       <form onSubmit={formik.handleSubmit}>
         <input 
@@ -131,7 +131,7 @@ function Auth({ setShowAuth, isSignUp, setUser, setIsSignUp, setIsForgettingPass
 
       <div className="forgot-password-link">
         <p onClick={() => setIsSignUp((isSignUp) => !isSignUp)}>{isSignUp ? 'Already have an account?' : 'Don\'t have an account?'}</p>
-        <p onClick={() => setIsForgettingPassword(true)}>Forget your password?</p>
+        <p onClick={() => setIsForgettingPassword(true)}>Forgot your password?</p>
       </div>
       <hr/>
     </div>
