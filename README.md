@@ -31,6 +31,8 @@ This project contains a dating website app built using Ruby on Rails, React.js, 
 
 ✅ View user profiles
 
+![View user](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/876ad43c-4123-4d5b-af0c-407da59331fe)
+
 ✅ Message/chat with users in real-time
 
 ![Message](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/9db83ab3-a7cf-4f02-be18-31b6bce43211)
