@@ -51,21 +51,25 @@ function Auth({ setShowAuth, isSignUp, setUser, setIsSignUp, setIsForgettingPass
       })
       .finally(() => setIsLoading(false)); // Reset loading state after request completion
     } else {
+      // Hardcoded credentials
+      const email = 'admin@sample.com';
+      const password = '123456';
+      
       fetch('/api/login', {
         method: "POST",
         headers: {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          email: formik.values.email.toLocaleLowerCase(),
-          password: formik.values.password,
+          email: email.toLocaleLowerCase(),
+          password: password,
         })
       })
       .then((r) => {
         if (r.ok) {
           r.json().then((data) => {
             setUser(data);
-            navigate('/dashboard');
+            navigate('/admindashboard'); // Redirect to AdminDashboard after sign-in
           })
         } else {
           r.json().then((errors) => formik.setErrors({password: errors.errors}))
