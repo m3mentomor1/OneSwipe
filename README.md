@@ -1,4 +1,4 @@
-# Dating Web App
+![Edit sign in](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/5d992b98-7677-4fb4-803d-e28412c059a7)![Edit sign in](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/5d992b98-7677-4fb4-803d-e28412c059a7)# Dating Web App
 
 ### 🧐 I. Overview
 ![image](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/121dad6e-1bfc-436c-9fad-9286b5a11d82)
@@ -13,18 +13,17 @@ This project contains a dating website app built using Ruby on Rails, React.js, 
 
 ![Create an account](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/d290fdd6-91d0-4a1c-8bc3-e9400ad23852)
 
-
 ✅ Sign-in
 
 ![Sign in](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/b891bd9a-ddf9-4aa3-b53b-9734559e773a)
-
 
 ✅ Edit account profile/details
 
 ![Edit account](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/b14ed513-4c2d-4e86-b633-8f9f65f45db6)
 
-
 ✅ Edit sign-in credentials
+
+![Edit sign in](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/437b6c05-b99a-46fc-b9ae-095e44667718)
 
 ✅ Match users
 
