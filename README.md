@@ -27,6 +27,8 @@ This project contains a dating website app built using Ruby on Rails, React.js, 
 
 ✅ Match users
 
+✅ View user profiles
+
 ✅ Message/chat with users in real-time
 
 ##
