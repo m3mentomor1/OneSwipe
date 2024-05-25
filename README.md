@@ -120,3 +120,5 @@ This project contains a dating website app built using Ruby on Rails, React.js, 
 ##
 
 ### 📄 V. License
+
+👉 [Project License](https://github.com/m3mentomor1/Dating_Web-App/blob/main/LICENSE)
