@@ -1,4 +1,6 @@
-# Dating Web App
+<div align="center">
+  <h1>Dating Web App</h1>
+</div>
 
 ### 🧐 I. Overview
 ![image](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/121dad6e-1bfc-436c-9fad-9286b5a11d82)
