@@ -40,11 +40,11 @@ This project contains a dating website app built using Ruby on Rails, React.js, 
 ##
 
 ### 💻 III. Tech Stack
-``JavaScript`` ``React`` - 
+``JavaScript`` ``React`` - Front-end
 
-``Ruby`` ``Ruby on Rails`` - 
+``Ruby`` ``Ruby on Rails`` - Back-end
 
-``Azure Database for PostgreSQL`` - 
+``Azure Database for PostgreSQL`` - Database
 
 ##
 
