@@ -11,31 +11,37 @@ This is a dating website app project built using Ruby on Rails, React.js, & Azur
 
 ### ⛓️ II. Features
 
-✅ Create an account
+#### ✅ Create an account
 
 ![Create an account](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/d290fdd6-91d0-4a1c-8bc3-e9400ad23852)
-<br><br>
-✅ Sign-in
+<br><br><br>
+
+#### ✅ Sign-in
 
 ![Sign in](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/b891bd9a-ddf9-4aa3-b53b-9734559e773a)
-<br><br>
-✅ Edit account profile/details
+<br><br><br>
+
+#### ✅ Edit account profile/details
 
 ![Edit account](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/b14ed513-4c2d-4e86-b633-8f9f65f45db6)
-<br><br>
-✅ Edit sign-in credentials
+<br><br><br>
+
+#### ✅ Edit sign-in credentials
 
 ![Edit sign in](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/437b6c05-b99a-46fc-b9ae-095e44667718)
-<br><br>
-✅ Match users
+<br><br><br>
+
+#### ✅ Match users
 
 ![Match Users](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/f8c43416-8814-4561-b2e8-7038bd1825a3)
-<br><br>
-✅ View user profiles
+<br><br><br>
+
+#### ✅ View user profiles
 
 ![View user](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/876ad43c-4123-4d5b-af0c-407da59331fe)
-<br><br>
-✅ Message/chat with users in real-time
+<br><br><br>
+
+#### ✅ Message/chat with users in real-time
 
 ![Message](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/9db83ab3-a7cf-4f02-be18-31b6bce43211)
 <br><br>
