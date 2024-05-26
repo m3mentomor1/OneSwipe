@@ -75,7 +75,7 @@ This is a dating website app project built using Ruby on Rails, React.js, & Azur
 
 **4. On the Azure portal, create a resource & an instance for Azure Database for PostgreSQL.**
 
-(Refer to this [link](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-server-portal) for more instructions.)
+(*Refer to this [link](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-server-portal) for more instructions.*)
    
 **5. Go to "config/database.yml" & configure the database connection:**
 
@@ -88,7 +88,7 @@ This is a dating website app project built using Ruby on Rails, React.js, & Azur
         password: <your_password>
     
 
-(Refer to this [link](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-server-portal#get-the-connection-information) for more instructions.)
+(*Refer to this [link](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-server-portal#get-the-connection-information) for more instructions.*)
 
 **6. Run database migrations.**
 
