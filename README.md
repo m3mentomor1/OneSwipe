@@ -49,7 +49,7 @@ This is a dating website app project built using Ruby on Rails, React.js, & Azur
 
 ##
 
-### 🛠️ IV. How to use this repository?
+### 🛠️ IV. Use this repository
 
 **1. Clone this repository.**
 
