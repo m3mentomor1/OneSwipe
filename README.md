@@ -51,7 +51,7 @@ This is a dating website app project built using Ruby on Rails, React.js, & Azur
 
 ### 🛠️ IV. Use this repository
 
-**1. Make sure that you have the following prerequisites & requirements:**
+**1. Make sure that you have the following requirements:**
 
 - **Ruby** (v3.2.2) - the programming language used for the back-end of the app.
 - **Ruby on Rails** (v7.0.4.3) - the web framework used for the back-end of the app. 
