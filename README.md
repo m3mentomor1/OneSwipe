@@ -6,7 +6,7 @@
 ![image](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/121dad6e-1bfc-436c-9fad-9286b5a11d82)
 
 This is a dating website app project built using Ruby on Rails, React.js, & Azure Database for PostgreSQL. The app mimics how tinder works with a few modifications. 
-
+<br><br>
 ##
 
 ### ⛓️ II. Features
@@ -38,7 +38,7 @@ This is a dating website app project built using Ruby on Rails, React.js, & Azur
 ✅ Message/chat with users in real-time
 
 ![Message](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/9db83ab3-a7cf-4f02-be18-31b6bce43211)
-
+<br><br>
 ##
 
 ### 💻 III. Tech Stack
@@ -46,7 +46,7 @@ This is a dating website app project built using Ruby on Rails, React.js, & Azur
 - Front-end: ``JavaScript`` ``React``
 
 - Back-end: ``Ruby`` ``Ruby on Rails`` ``Azure Database for PostgreSQL``
-
+<br><br>
 ##
 
 ### 🛠️ IV. Use this repository
@@ -138,7 +138,7 @@ Note: Make sure that you have an active Azure subscription.
    ```
    npm start --prefix client
    ```
-
+<br><br>
 ##
 
 ### 📄 V. License
