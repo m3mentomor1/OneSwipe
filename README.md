@@ -51,6 +51,17 @@ This is a dating website app project built using Ruby on Rails, React.js, & Azur
 
 ### 🛠️ IV. Use this repository
 
+**1. Make sure that you have the following prerequisites & requirements:**
+
+- **Ruby**
+- **Ruby on Rails**
+- **Bundler**
+- **Node.js**
+- **PostgreSQL**
+- **Azure Subscription**
+- **Ubuntu WSL**
+- **Azure Data Studio** (Optional)
+
 **1. Clone this repository.**
 
    Run this command in your terminal: 
