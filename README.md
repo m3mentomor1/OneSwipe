@@ -57,7 +57,7 @@ This is a dating website app project built using Ruby on Rails, React.js, & Azur
 - **Ruby on Rails** (v7.0.4.3) - the web framework used for the back-end of the app. 
 - **Bundler** - manages Ruby gem dependencies within the app.
 - **Node.js (v20.11.0)** - utilized for managing front-end dependencies (JavaScript, React) & running build tools such as the Webpacker.
-- **PostgreSQL** (14) - the database used by the app 
+- **PostgreSQL** (14) - the database used by the app. 
 - **Azure Subscription** - required for provisioning cloud resources, particularly Azure Database for PostgreSQL. 
 - **Ubuntu WSL** - for running Linux commands.
 - **Azure Data Studio** (Optional) - for convenient database management.
