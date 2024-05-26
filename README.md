@@ -14,7 +14,7 @@ This is a dating website app project built using Ruby on Rails, React.js, & Azur
 ✅ Create an account
 
 ![Create an account](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/d290fdd6-91d0-4a1c-8bc3-e9400ad23852)
-
+<br>
 ✅ Sign-in
 
 ![Sign in](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/b891bd9a-ddf9-4aa3-b53b-9734559e773a)
@@ -138,7 +138,7 @@ Note: Make sure that you have an active Azure subscription.
    ```
    npm start --prefix client
    ```
-<br><br>
+<br>
 ##
 
 ### 📄 V. License
