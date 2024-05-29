@@ -68,6 +68,8 @@ This is a dating website app project built using Ruby on Rails, React.js, & Azur
 - **Ubuntu WSL** - for running Linux commands.
 - **Azure Data Studio** (Optional) - for convenient database management.
 
+<br>
+
 **2. Clone this repository.**
 
    Run this command in your terminal: 
