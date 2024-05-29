@@ -78,12 +78,16 @@ This is a dating website app project built using Ruby on Rails, React.js, & Azur
    ```
 (Optional: You can also ```Fork``` this repository before cloning.)
 
+<br>
+
 **3. Go to the repository's main directory.**
 
    Run this command in your terminal: 
    ```
    cd Dating_Web-App
    ```
+
+<br>
 
 **4. Install back-end dependencies.**
 
@@ -92,6 +96,8 @@ This is a dating website app project built using Ruby on Rails, React.js, & Azur
    bundle install
    ```
 
+<br>
+
 **5. On the Azure portal, create a resource & an instance for Azure Database for PostgreSQL.**
 
 ![azuredb](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/efeca963-5a7b-438c-9fb0-cf7c4ec6d10d)
@@ -99,7 +105,9 @@ This is a dating website app project built using Ruby on Rails, React.js, & Azur
 Note: Make sure that you have an active Azure subscription.
 
 (*Refer to this [link](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-server-portal) for more instructions.*)
-   
+
+<br>
+
 **6. Go to "config/database.yml" & configure the database connection:**
 
     default: &default
@@ -113,11 +121,15 @@ Note: Make sure that you have an active Azure subscription.
 
 (*Refer to this [link](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-server-portal#get-the-connection-information) for more instructions.*)
 
+<br>
+
 **7. For convenience, you can also use Azure Data Studio to manage the database. (Optional)**
 
 ![azuredata](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/909bbbbe-037e-4bf5-b7d7-b617570e47d3)
 
 (*Refer to this [link](https://learn.microsoft.com/en-us/azure-data-studio/download-azure-data-studio) to download & install Azure Data Studio.*)
+
+<br>
 
 **8. Run database migrations.**
 
@@ -126,6 +138,8 @@ Note: Make sure that you have an active Azure subscription.
    rails db:migrate
    ```
 
+<br>
+
 **9. Install client-side dependencies for React.**
 
    Run this command in your terminal: 
@@ -133,12 +147,16 @@ Note: Make sure that you have an active Azure subscription.
    npm install --prefix client
    ```
 
+<br>
+
 **10. Start rails server.**
 
    Run this command in your terminal: 
    ```
    rails server
    ```
+
+<br>
 
 **11. Start development server for React, to run the app.**
 
