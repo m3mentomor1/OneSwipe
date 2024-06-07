@@ -49,7 +49,7 @@ This is a dating website app project built using Ruby on Rails, React.js, & Azur
 
 ### 💻 III. Tech Stack
 
-- Front-end: ``JavaScript`` ``React``
+- Front-end: ``JavaScript`` ``React`` ``CSS``
 
 - Back-end: ``Ruby`` ``Ruby on Rails`` ``Azure Database for PostgreSQL``
 <br><br>
