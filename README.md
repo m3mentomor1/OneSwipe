@@ -5,7 +5,7 @@
 ### 🧐 I. Overview
 <div align="center">
   <img src="https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/237f26aa-7077-4001-b652-b3ecf380052b" alt="Logo">
-</div>
+</div><br>
 
 This is a dating web app project built using Ruby on Rails, React.js, & Azure Database for PostgreSQL. The app mimics how tinder works with a few modifications. 
 <br><br>
