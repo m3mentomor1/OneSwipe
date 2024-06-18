@@ -1,11 +1,11 @@
 <div align="center">
-  <h1>Dating Web App</h1>
+  <h1>OneSwipe</h1>
 </div>
 
 ### 🧐 I. Overview
-![image](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/121dad6e-1bfc-436c-9fad-9286b5a11d82)
+![OneSwipe Logo-1](https://github.com/m3mentomor1/Dating_Web-App/assets/95956735/bd0126e8-dd51-4364-9e6a-ba1ea11d10f0)
 
-This is a dating website app project built using Ruby on Rails, React.js, & Azure Database for PostgreSQL. The app mimics how tinder works with a few modifications. 
+This is a dating web app project built using Ruby on Rails, React.js, & Azure Database for PostgreSQL. The app mimics how tinder works with a few modifications. 
 <br><br>
 ##
 
