@@ -10,6 +10,8 @@
 This is a dating web app project built using Ruby on Rails, React.js, & Azure Database for PostgreSQL. The app mimics how tinder works with a few modifications. 
 
 This project is part of & was developed during my 4-week internship at a company called **ChatGenie**, where I explored web development concepts using Ruby on Rails & PostgreSQL.
+
+(***Note:** No confidential information or proprietary data is included in this repo. All materials in this project have been authorized for publication in the public domain.*)
 <br><br>
 ##
 
