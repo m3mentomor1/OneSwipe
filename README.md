@@ -8,6 +8,8 @@
 </div><br>
 
 This is a dating web app project built using Ruby on Rails, React.js, & Azure Database for PostgreSQL. The app mimics how tinder works with a few modifications. 
+
+This project is part of my 4-week internship at a company called **ChatGenie**, where I explored web development concepts using Ruby on Rails & PostgreSQL.
 <br><br>
 ##
 
